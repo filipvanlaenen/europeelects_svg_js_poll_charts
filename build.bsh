@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Builds the project
+
+TARGETDIR="target"
+
+echo "Building the project into ${TARGETDIR}..."
+
+mkdir -p "${TARGETDIR}"
+rm -f "${TARGETDIR}/*"
+
+cp *.svg "${TARGETDIR}"
+
+cd "${TARGETDIR}"
+
+for f in *.svg
+do
+  awk 'sub("$", "\r")' "$f" > "$f-windows"
+  mv "$f-windows" "$f"
+done
+
+
+echo "Done."
