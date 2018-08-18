@@ -81,7 +81,6 @@
 					svg.getElementById("title").firstChild.nodeValue = t;
 				}
 <!-- COUNTRY SPECIFIC JAVASCRIPT CODE -->
-        }
 			//]]>
 		</script>
     <clipPath
