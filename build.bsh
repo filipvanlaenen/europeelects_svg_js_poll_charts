@@ -9,7 +9,16 @@ echo "Building the project into ${TARGETDIR}..."
 mkdir -p "${TARGETDIR}"
 rm -f "${TARGETDIR}/*"
 
-cp *.svg "${TARGETDIR}"
+# Parameter 1: Country name
+# Parameter 2: Number of parties
+#
+function build {
+  echo "Building a chart with ${2} parties for ${1}..."
+  cp "${1}-${2}".svg "${TARGETDIR}"  
+}
+
+build Sweden 8
+build Sweden 9
 
 cd "${TARGETDIR}"
 
@@ -18,6 +27,5 @@ do
   awk 'sub("$", "\r")' "$f" > "$f-windows"
   mv "$f-windows" "$f"
 done
-
 
 echo "Done."
