@@ -14,7 +14,14 @@ rm -f "${TARGETDIR}/*"
 #
 function build {
   echo "Building a chart with ${2} parties for ${1}..."
-  cp "${1}-${2}".svg "${TARGETDIR}"  
+  cp "Country-${2}.svg" "${TARGETDIR}/${1}-${2}.svg"
+  sed -i -- "s/<!-- COUNTRY NAME -->/${1}/g" "${TARGETDIR}/${1}-${2}.svg"
+  CSJSC=`cat ${1}.js`
+  CSJSC=${CSJSC//$'\n'/\\$'\n'} # escape newlines
+  CSJSC=${CSJSC//\//\\\/} # escape slashes
+  CSJSC=${CSJSC//$'&'/\\$'&'_amp;} # escape ampersands
+  sed -i -- "s/<!-- COUNTRY SPECIFIC JAVASCRIPT CODE -->/$CSJSC/g" "${TARGETDIR}/${1}-${2}.svg"
+  sed -i -- "s/\&_amp;/\&/g" "${TARGETDIR}/${1}-${2}.svg"
 }
 
 build Sweden 8
