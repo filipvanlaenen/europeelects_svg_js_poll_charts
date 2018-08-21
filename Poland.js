@@ -10,30 +10,28 @@
           //
           // Rearrange the parties according to size, and fill in the percentage:
           //
-          fillParty(svg, no_of_decimals, "1", "S", 23.6);
-          fillParty(svg, no_of_decimals, "2", "M", 19.7);
-          fillParty(svg, no_of_decimals, "3", "SD", 19.6);
-          fillParty(svg, no_of_decimals, "4", "C", 11.1);
-          fillParty(svg, no_of_decimals, "5", "V", 8.8);
-          fillParty(svg, no_of_decimals, "6", "MP", 6.5);
-          fillParty(svg, no_of_decimals, "7", "L", 4.8);
-          fillParty(svg, no_of_decimals, "8", "KD", 3.6);
-          fillParty(svg, no_of_decimals, "9", "Fi", 1.0);
+          fillParty(svg, no_of_decimals, "1", "PiS", 38.3);
+          fillParty(svg, no_of_decimals, "2", "PO", 24.8);
+          fillParty(svg, no_of_decimals, "3", "SLD", 8.5);
+          fillParty(svg, no_of_decimals, "4", "K’15", 6.4);
+          fillParty(svg, no_of_decimals, "5", "PSL", 5.4);
+          fillParty(svg, no_of_decimals, "6", ".N", 4.1);
+          fillParty(svg, no_of_decimals, "7", "RAZ", 1.7);
+          fillParty(svg, no_of_decimals, "8", "WOL", 1.4);
           //
           // *******************************************************************
           //
         }
         function fillParty(svg, no_of_decimals, index, name, result) {
           var ep_groups = {};
-          ep_groups["C"] = "ALDE";
-          ep_groups["Fi"] = "S&D";
-          ep_groups["L"] = "ALDE";
-          ep_groups["KD"] = "EPP";
-          ep_groups["M"] = "EPP";
-          ep_groups["MP"] = "Greens/EFA";
-          ep_groups["S"] = "S&D";
-          ep_groups["SD"] = "ECR";
-          ep_groups["V"] = "GUE/NGL";
+          ep_groups["K’15"] = "*";
+          ep_groups[".N"] = "ALDE";
+          ep_groups["PiS"] = "ECR";
+          ep_groups["PO"] = "EPP";
+          ep_groups["PSL"] = "EPP";
+          ep_groups["RAZ"] = "GUE/NGL";
+          ep_groups["SLD"] = "S&D";
+          ep_groups["WOL"] = "EFDD";
           var colors = {};
           colors["*"] = "#999999";
           colors["ALDE"] = "#FFD700";
@@ -44,15 +42,14 @@
           colors["GUE/NGL"] = "#990000";
           colors["S&D"] = "#FF0000";
           var last_results = {};
-          last_results["C"] = 6.1;
-          last_results["Fi"] = 3.1;
-          last_results["L"] = 5.4;
-          last_results["KD"] = 4.6;
-          last_results["M"] = 23.3;
-          last_results["MP"] = 6.9;
-          last_results["S"] = 31.0;
-          last_results["SD"] = 12.9;
-          last_results["V"] = 5.7;
+          last_results["K’15"] = 8.8;
+          last_results[".N"] = 7.6;
+          last_results["PiS"] = 37.6;
+          last_results["PO"] = 24.1;
+          last_results["PSL"] = 5.1;
+          last_results["RAZ"] = 3.6;
+          last_results["SLD"] = 7.6;
+          last_results["WOL"] = 4.8;
           svg.getElementById("party-name-" + index).firstChild.nodeValue = name;
           svg.getElementById("ep-group-name-" + index).firstChild.nodeValue = ep_groups[name];
           svg.getElementById("party-bar-" + index).setAttribute("height", result * 20);

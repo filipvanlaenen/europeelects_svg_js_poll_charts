@@ -33,6 +33,7 @@
           ep_groups["LINKE"] = "GUE/NGL";
           ep_groups["SPD"] = "S&D";
           var colors = {};
+          colors["*"] = "#999999";
           colors["ALDE"] = "#FFD700";
           colors["ECR"] = "#0000FF";
           colors["EFDD"] = "#24B9B9";
