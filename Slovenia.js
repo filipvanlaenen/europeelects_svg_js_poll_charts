@@ -52,13 +52,17 @@
           colors["GUE/NGL"] = "#990000";
           colors["S&D"] = "#FF0000";
           var last_results = {};
+          last_results["AČZS"] = 1.1;
+          last_results["DD"] = 1.5;
           last_results["DeSUS"] = 4.9;
           last_results["L"] = 9.3;
           last_results["LMŠ"] = 12.6;
           last_results["NSi"] = 7.2;
           last_results["PAB"] = 5.1;
+          last_results["PPS"] = 2.2;
           last_results["SD"] = 9.9;
           last_results["SDS"] = 24.9;
+          last_results["SLS"] = 2.6;
           last_results["SMC"] = 9.8;
           last_results["SNS"] = 4.2;
           svg.getElementById("party-name-" + index).firstChild.nodeValue = name;
