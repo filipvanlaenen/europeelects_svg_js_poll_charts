@@ -24,6 +24,9 @@ function build {
   sed -i -- "s/\&_amp;/\&/g" "${TARGETDIR}/${1}-${2}.svg"
 }
 
+build Estonia 8
+build Estonia 9
+
 build Germany 6
 build Germany 7
 
