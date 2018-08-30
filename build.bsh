@@ -26,6 +26,16 @@ function build {
 
 build Austria 6
 
+# Belgium
+
+# Bulgaria
+
+# Croatia
+
+# Cyprus
+
+# Czech Republic
+
 build Denmark 10
 build Denmark 11
 
@@ -34,10 +44,18 @@ build Estonia 9
 
 build Finland 9
 
+# France
+
 build Germany 6
 build Germany 7
 
+# Greece
+
 build Hungary 7
+
+# Ireland
+
+# Italy
 
 build Latvia 7
 build Latvia 8
@@ -47,9 +65,23 @@ build Latvia 11
 build Latvia 12
 build Latvia 13
 
+# Lithuania
+
+# Luxembourg
+
+# Malta
+
+# Netherlands
+
 build Poland 6
 build Poland 7
 build Poland 8
+
+# Portugal
+
+# Romania
+
+# Slovakia
 
 build Slovenia 9
 build Slovenia 10
@@ -57,8 +89,12 @@ build Slovenia 11
 build Slovenia 12
 build Slovenia 13
 
+# Spain
+
 build Sweden 8
 build Sweden 9
+
+# United Kingdom
 
 cd "${TARGETDIR}"
 
