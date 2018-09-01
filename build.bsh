@@ -9,6 +9,15 @@ echo "Building the project into ${TARGETDIR}..."
 mkdir -p "${TARGETDIR}"
 rm -f "${TARGETDIR}/*"
 
+# Parameter 1: File name
+#
+function read_and_escape_javascript_code {
+  JSC=`cat ${1}.js`
+  JSC=${JSC//$'\n'/\\$'\n'} # escape newlines
+  JSC=${JSC//\//\\\/} # escape slashes
+  JSC=${JSC//$'&'/\\$'&'_amp;} # escape ampersands
+}
+
 # Parameter 1: Country name
 # Parameter 2: Number of parties
 #
@@ -16,10 +25,11 @@ function build {
   echo "Building a chart with ${2} parties for ${1}..."
   cp "Country-${2}.svg" "${TARGETDIR}/${1}-${2}.svg"
   sed -i -- "s/<!-- COUNTRY NAME -->/${1}/g" "${TARGETDIR}/${1}-${2}.svg"
-  CSJSC=`cat ${1}.js`
-  CSJSC=${CSJSC//$'\n'/\\$'\n'} # escape newlines
-  CSJSC=${CSJSC//\//\\\/} # escape slashes
-  CSJSC=${CSJSC//$'&'/\\$'&'_amp;} # escape ampersands
+  read_and_escape_javascript_code "common"
+  CJSC=$JSC
+  sed -i -- "s/<!-- COMMON JAVASCRIPT CODE -->/$CJSC/g" "${TARGETDIR}/${1}-${2}.svg"
+  read_and_escape_javascript_code "${1}"
+  CSJSC=$JSC
   sed -i -- "s/<!-- COUNTRY SPECIFIC JAVASCRIPT CODE -->/$CSJSC/g" "${TARGETDIR}/${1}-${2}.svg"
   sed -i -- "s/\&_amp;/\&/g" "${TARGETDIR}/${1}-${2}.svg"
 }
@@ -39,6 +49,7 @@ build Austria 6
 build Denmark 10
 build Denmark 11
 
+build Estonia 7
 build Estonia 8
 build Estonia 9
 
