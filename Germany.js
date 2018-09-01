@@ -32,15 +32,6 @@
           ep_groups["GRÜNE"] = "Greens/EFA";
           ep_groups["LINKE"] = "GUE/NGL";
           ep_groups["SPD"] = "S&D";
-          var colors = {};
-          colors["*"] = "#999999";
-          colors["ALDE"] = "#FFD700";
-          colors["ECR"] = "#0000FF";
-          colors["EFDD"] = "#24B9B9";
-          colors["EPP"] = "#3399FF";
-          colors["Greens/EFA"] = "#009900";
-          colors["GUE/NGL"] = "#990000";
-          colors["S&D"] = "#FF0000";
           var last_results = {};
           last_results["AfD"] = 12.6;
           last_results["CDU"] = 26.8;
@@ -50,6 +41,7 @@
           last_results["GRÜNE"] = 8.9;
           last_results["LINKE"] = 9.2;
           last_results["SPD"] = 20.5;
+          var colors = getEpGroupColors();
           svg.getElementById("party-name-" + index).firstChild.nodeValue = name;
           svg.getElementById("ep-group-name-" + index).firstChild.nodeValue = ep_groups[name];
           svg.getElementById("party-bar-" + index).setAttribute("height", result * 20);

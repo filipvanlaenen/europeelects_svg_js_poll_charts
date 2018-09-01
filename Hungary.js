@@ -30,17 +30,6 @@
           ep_groups["MKKP"] = "*";
           ep_groups["Momentum"] = "ALDE";
           ep_groups["MSZP-P"] = "S&D";
-          var colors = {};
-          colors["*"] = "#777777";
-          colors["ALDE"] = "#FFD700";
-          colors["ECR"] = "#0000FF";
-          colors["EFDD"] = "#24B9B9";
-          colors["ENF"] = "#2B3856";
-          colors["EPP"] = "#3399FF";
-          colors["Greens/EFA"] = "#009900";
-          colors["GUE/NGL"] = "#990000";
-          colors["NI"] = "#999999";
-          colors["S&D"] = "#FF0000";
           var last_results = {};
           last_results["DK"] = 5.38;
           last_results["Fidesz-KDNP"] = 49.27;
@@ -49,6 +38,7 @@
           last_results["MKKP"] = 1.73;
           last_results["Momentum"] = 3.06;
           last_results["MSZP-P"] = 11.91;
+          var colors = getEpGroupColors();
           svg.getElementById("party-name-" + index).firstChild.nodeValue = name;
           svg.getElementById("ep-group-name-" + index).firstChild.nodeValue = ep_groups[name];
           svg.getElementById("party-bar-" + index).setAttribute("height", result * 20);

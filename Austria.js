@@ -28,16 +28,6 @@
           ep_groups["ÖVP"] = "EPP";
           ep_groups["PILZ"] = "*";
           ep_groups["SPÖ"] = "S&D";
-          var colors = {};
-          colors["*"] = "#999999";
-          colors["ALDE"] = "#FFD700";
-          colors["ECR"] = "#0000FF";
-          colors["EFDD"] = "#24B9B9";
-          colors["ENF"] = "#2B3856";
-          colors["EPP"] = "#3399FF";
-          colors["Greens/EFA"] = "#009900";
-          colors["GUE/NGL"] = "#990000";
-          colors["S&D"] = "#FF0000";
           var last_results = {};
           last_results["FPÖ"] = 26.0;
           last_results["GRÜNE"] = 3.8;
@@ -45,6 +35,7 @@
           last_results["ÖVP"] = 31.4;
           last_results["PILZ"] = 4.4;
           last_results["SPÖ"] = 26.9;
+          var colors = getEpGroupColors();
           svg.getElementById("party-name-" + index).firstChild.nodeValue = name;
           svg.getElementById("ep-group-name-" + index).firstChild.nodeValue = ep_groups[name];
           svg.getElementById("party-bar-" + index).setAttribute("height", result * 20);

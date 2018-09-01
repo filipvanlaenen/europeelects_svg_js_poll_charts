@@ -34,16 +34,6 @@
           ep_groups["Sin"] = "ECR";
           ep_groups["Vas"] = "GUE/NGL";
           ep_groups["Vihr"] = "Greens/EFA";
-          var colors = {};
-          colors["*"] = "#999999";
-          colors["ALDE"] = "#FFD700";
-          colors["ECR"] = "#0000FF";
-          colors["EFDD"] = "#24B9B9";
-          colors["ENF"] = "#2B3856";
-          colors["EPP"] = "#3399FF";
-          colors["Greens/EFA"] = "#009900";
-          colors["GUE/NGL"] = "#990000";
-          colors["S&D"] = "#FF0000";
           var last_results = {};
           last_results["KD"] = 3.5;
           last_results["Kesk"] = 21.1;
@@ -54,6 +44,7 @@
           last_results["Sin"] = 0;
           last_results["Vas"] = 7.1;
           last_results["Vihr"] = 8.5;
+          var colors = getEpGroupColors();
           svg.getElementById("party-name-" + index).firstChild.nodeValue = name;
           svg.getElementById("ep-group-name-" + index).firstChild.nodeValue = ep_groups[name];
           svg.getElementById("party-bar-" + index).setAttribute("height", result * 20);

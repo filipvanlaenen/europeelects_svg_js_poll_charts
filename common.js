@@ -3,6 +3,20 @@
 					setTitle(svg);
           fillChart(svg);
 				}
+        function getEpGroupColors() {
+          var colors = {};
+          colors["*"] = "#777777";
+          colors["ALDE"] = "#FFD700";
+          colors["ECR"] = "#0000FF";
+          colors["EFDD"] = "#24B9B9";
+          colors["ENF"] = "#2B3856";
+          colors["EPP"] = "#3399FF";
+          colors["Greens/EFA"] = "#009900";
+          colors["GUE/NGL"] = "#990000";
+          colors["NI"] = "#999999";
+          colors["S&D"] = "#FF0000";
+          return colors;
+        }
 				function setTitle(svg) {
           //
           // *******************************************************************

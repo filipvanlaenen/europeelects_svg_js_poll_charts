@@ -42,15 +42,6 @@
           ep_groups["SKG"] = "*";
           ep_groups["V"] = "EPP";
           ep_groups["ZZS"] = "ALDE";
-          var colors = {};
-          colors["*"] = "#999999";
-          colors["ALDE"] = "#FFD700";
-          colors["ECR"] = "#0000FF";
-          colors["EFDD"] = "#24B9B9";
-          colors["EPP"] = "#3399FF";
-          colors["Greens/EFA"] = "#009900";
-          colors["GUE/NGL"] = "#990000";
-          colors["S&D"] = "#FF0000";
           var last_results = {};
           last_results["Att/PAR"] = 0;
           last_results["JKP"] = 0;
@@ -65,6 +56,7 @@
           last_results["SKG"] = 0;
           last_results["V"] = 21.9;
           last_results["ZZS"] = 19.7;
+          var colors = getEpGroupColors();
           svg.getElementById("party-name-" + index).firstChild.nodeValue = name;
           svg.getElementById("ep-group-name-" + index).firstChild.nodeValue = ep_groups[name];
           svg.getElementById("party-bar-" + index).setAttribute("height", result * 20);
