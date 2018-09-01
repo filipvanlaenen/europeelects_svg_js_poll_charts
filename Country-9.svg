@@ -212,7 +212,7 @@
        id="g338">
       <rect
          height="20"
-         width="160"
+         width="65"
          x="-765.92792"
          y="887.99103"
          id="rect80-2"
@@ -220,7 +220,7 @@
          transform="rotate(-90)" />
       <rect
          height="40"
-         width="120"
+         width="55"
          x="-765.92792"
          y="857.9906"
          id="rect86-9"
@@ -231,7 +231,7 @@
          font-style="normal"
          font-weight="bold"
          text-align="center"
-         x="-495.87753"
+         x="-555.87753"
          y="884.9906"
          id="text88-3"
          style="font-style:normal;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:end;fill:#0060ae"
@@ -245,7 +245,7 @@
          y="907.58105"
          id="text92-0"
          style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:end;opacity:0.5;fill:#0060ae"
-         transform="rotate(-90)">Last result</text>
+         transform="rotate(-90)">Last election result</text>
     </g>
 
   <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-1" y="870" x="150" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 1</text>
