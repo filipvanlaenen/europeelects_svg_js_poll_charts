@@ -3,6 +3,9 @@
 					setTitle(svg);
           fillChart(svg);
 				}
+        function barHeight(value, max_value) {
+          return value * 20 * 25 / max_value;
+        }
         function getEpGroupColors() {
           var colors = {};
           colors["*"] = "#777777";
@@ -38,6 +41,3 @@
 					t = polling_firm + (fieldwork_period == "N/A" ? "" : (" · " + fieldwork_period)) +  (sample_size == "N/A" ? "" : (" · " + sample_size + " respondents"));
 					svg.getElementById("title").firstChild.nodeValue = t;
 				}
-        function barHeight(value, max_value) {
-          return value * 20 * 25 / max_value;
-        }
