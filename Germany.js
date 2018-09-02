@@ -42,18 +42,19 @@
           last_results["LINKE"] = 9.2;
           last_results["SPD"] = 20.5;
           var colors = getEpGroupColors();
+          var max_value = 34.0;
           svg.getElementById("party-name-" + index).firstChild.nodeValue = name;
           svg.getElementById("ep-group-name-" + index).firstChild.nodeValue = ep_groups[name];
-          svg.getElementById("party-bar-" + index).setAttribute("height", result * 20);
-          svg.getElementById("party-bar-" + index).setAttribute("y", 830 - result * 20);
+          svg.getElementById("party-bar-" + index).setAttribute("height", barHeight(result, max_value));
+          svg.getElementById("party-bar-" + index).setAttribute("y", 830 - barHeight(result, max_value));
           svg.getElementById("party-bar-" + index).setAttribute("fill", colors[ep_groups[name]]);
-          svg.getElementById("party-bar-last-" + index).setAttribute("height", last_results[name] * 20);
-          svg.getElementById("party-bar-last-" + index).setAttribute("y", 830 - last_results[name] * 20);
+          svg.getElementById("party-bar-last-" + index).setAttribute("height", barHeight(last_results[name], max_value));
+          svg.getElementById("party-bar-last-" + index).setAttribute("y", 830 - barHeight(last_results[name], max_value));
           svg.getElementById("party-bar-last-" + index).setAttribute("fill", colors[ep_groups[name]]);
           svg.getElementById("percentage-" + index).firstChild.nodeValue = result.toFixed(no_of_decimals) + "%";
-          svg.getElementById("percentage-" + index).setAttribute("y", 815 - result * 20);
+          svg.getElementById("percentage-" + index).setAttribute("y", 815 - barHeight(result, max_value));
           svg.getElementById("percentage-last-" + index).firstChild.nodeValue = last_results[name].toFixed(no_of_decimals) + "%";
-          svg.getElementById("percentage-last-" + index).setAttribute("y", 815 - last_results[name] * 20);
+          svg.getElementById("percentage-last-" + index).setAttribute("y", 815 - barHeight(last_results[name], max_value));
           if (last_results[name] < result) {
             var last_result_x = parseInt(svg.getElementById("percentage-last-" + index).getAttribute("x"));
             svg.getElementById("percentage-last-" + index).setAttribute("x", last_result_x + 20);
