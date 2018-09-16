@@ -11,7 +11,7 @@
    width="1900"
    version="1.1"
    id="svg294"
-   sodipodi:docname="Country-6.svg"
+   sodipodi:docname="Country-4.svg"
    onload="setData(evt);">
   <metadata
      id="metadata298">
@@ -257,40 +257,26 @@
   <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-1" y="800" x="150" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 1</text>
   <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-1" y="800" x="190" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 4</text>
 
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-2" y="870" x="300" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 2</text>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="ep-group-name-2" y="920" x="300" text-align="center" font-weight="bold" font-style="normal" font-size="36px">EP Group Name 2</text>
-  <rect id="party-bar-2" y="830" x="260" width="80" height="498" fill="#ff0000" />
-  <rect id="party-bar-last-2" y="830" x="320" width="40" height="498" fill="#ff0000" style="opacity:0.5"/>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-2" y="800" x="300" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 2</text>
-  <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-2" y="800" x="340" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 4</text>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-2" y="870" x="400" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 2</text>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="ep-group-name-2" y="920" x="400" text-align="center" font-weight="bold" font-style="normal" font-size="36px">EP Group Name 2</text>
+  <rect id="party-bar-2" y="830" x="360" width="80" height="498" fill="#ff0000" />
+  <rect id="party-bar-last-2" y="830" x="420" width="40" height="498" fill="#ff0000" style="opacity:0.5"/>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-2" y="800" x="400" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 2</text>
+  <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-2" y="800" x="440" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 4</text>
 
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-3" y="870" x="450" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 3</text>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="ep-group-name-3" y="920" x="450" text-align="center" font-weight="bold" font-style="normal" font-size="36px">EP Group Name 3</text>
-  <rect id="party-bar-3" y="830" x="410" width="80" height="498" fill="#ff0000" />
-  <rect id="party-bar-last-3" y="830" x="470" width="40" height="498" fill="#ff0000" style="opacity:0.5"/>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-3" y="800" x="450" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 3</text>
-  <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-3" y="800" x="490" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 4</text>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-3" y="870" x="650" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 3</text>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="ep-group-name-3" y="920" x="650" text-align="center" font-weight="bold" font-style="normal" font-size="36px">EP Group Name 3</text>
+  <rect id="party-bar-3" y="830" x="610" width="80" height="498" fill="#ff0000" />
+  <rect id="party-bar-last-3" y="830" x="670" width="40" height="498" fill="#ff0000" style="opacity:0.5"/>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-3" y="800" x="650" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 3</text>
+  <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-3" y="800" x="690" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 4</text>
 
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-4" y="870" x="600" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 4</text>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="ep-group-name-4" y="920" x="600" text-align="center" font-weight="bold" font-style="normal" font-size="36px">EP Group Name 4</text>
-  <rect id="party-bar-4" y="830" x="560" width="80" height="498" fill="#ff0000" />
-  <rect id="party-bar-last-4" y="830" x="620" width="40" height="498" fill="#ff0000" style="opacity:0.5"/>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-4" y="800" x="600" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 4</text>
-  <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-4" y="800" x="640" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 4</text>
-
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-5" y="870" x="750" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 5</text>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="ep-group-name-5" y="920" x="750" text-align="center" font-weight="bold" font-style="normal" font-size="36px">EP Group Name 5</text>
-  <rect id="party-bar-5" y="830" x="710" width="80" height="498" fill="#ff0000" />
-  <rect id="party-bar-last-5" y="830" x="770" width="40" height="498" fill="#ff0000" style="opacity:0.5"/>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-5" y="800" x="750" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 5</text>
-  <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-5" y="800" x="790" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 5</text>
-
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-6" y="870" x="900" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 6</text>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="ep-group-name-6" y="920" x="900" text-align="center" font-weight="bold" font-style="normal" font-size="36px">EP Group Name 6</text>
-  <rect id="party-bar-6" y="830" x="860" width="80" height="498" fill="#ff0000" />
-  <rect id="party-bar-last-6" y="830" x="920" width="40" height="498" fill="#ff0000" style="opacity:0.5"/>
-  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-6" y="800" x="900" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 6</text>
-  <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-6" y="800" x="940" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 6</text>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="party-name-4" y="870" x="900" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Party Name 4</text>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="ep-group-name-4" y="920" x="900" text-align="center" font-weight="bold" font-style="normal" font-size="36px">EP Group Name 4</text>
+  <rect id="party-bar-4" y="830" x="860" width="80" height="498" fill="#ff0000" />
+  <rect id="party-bar-last-4" y="830" x="920" width="40" height="498" fill="#ff0000" style="opacity:0.5"/>
+  <text style="font-style:normal;font-weight:bold;font-size:36px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae" id="percentage-4" y="800" x="900" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Percentage 4</text>
+  <text style="font-style:italic;font-weight:bold;font-size:28px;font-family:'Advent Pro';text-align:center;text-anchor:middle;fill:#0060ae;opacity:0.5" id="percentage-last-4" y="800" x="940" text-align="center" font-weight="bold" font-style="normal" font-size="36px">Last Percentage 4</text>
 
   </g>
 

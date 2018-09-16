@@ -20,18 +20,27 @@ function read_and_escape_javascript_code {
 
 # Parameter 1: Country name
 # Parameter 2: Number of parties
+# Parameter 3: Suffix
 #
-function build {
+function build_svg {
   echo "Building a chart with ${2} parties for ${1}..."
-  cp "Country-${2}.svg" "${TARGETDIR}/${1}-${2}.svg"
-  sed -i -- "s/<!-- COUNTRY NAME -->/${1}/g" "${TARGETDIR}/${1}-${2}.svg"
+  cp "Country-${2}.svg" "${TARGETDIR}/${1}-${2}${3}.svg"
+  sed -i -- "s/<!-- COUNTRY NAME -->/${1}/g" "${TARGETDIR}/${1}-${2}${3}.svg"
   read_and_escape_javascript_code "common"
   CJSC=$JSC
-  sed -i -- "s/<!-- COMMON JAVASCRIPT CODE -->/$CJSC/g" "${TARGETDIR}/${1}-${2}.svg"
-  read_and_escape_javascript_code "${1}"
+  sed -i -- "s/<!-- COMMON JAVASCRIPT CODE -->/$CJSC/g" "${TARGETDIR}/${1}-${2}${3}.svg"
+  read_and_escape_javascript_code "${1}${3}"
   CSJSC=$JSC
-  sed -i -- "s/<!-- COUNTRY SPECIFIC JAVASCRIPT CODE -->/$CSJSC/g" "${TARGETDIR}/${1}-${2}.svg"
-  sed -i -- "s/\&_amp;/\&/g" "${TARGETDIR}/${1}-${2}.svg"
+  sed -i -- "s/<!-- COUNTRY SPECIFIC JAVASCRIPT CODE -->/$CSJSC/g" "${TARGETDIR}/${1}-${2}${3}.svg"
+  sed -i -- "s/\&_amp;/\&/g" "${TARGETDIR}/${1}-${2}${3}.svg"
+}
+
+# Parameter 1: Country name
+# Parameter 2: Number of parties
+#
+function build {
+  build_svg "${1}" "${2}" ""
+#  build_svg "${1}" "${2}" "-seats"
 }
 
 build Austria 6
@@ -103,7 +112,12 @@ build Slovenia 11
 build Slovenia 12
 build Slovenia 13
 
-# Spain
+build Spain 4
+build Spain 5
+build Spain 6
+build Spain 7
+build Spain 8
+build Spain 9
 
 build Sweden 8
 build Sweden 9
